@@ -29,11 +29,13 @@ python3 flow_log_parser.py flow_logs.txt lookup_table.csv output.txt
 Input:
 Flow Log File: This file contains the flow log entries to be parsed.
 Lookup Table File: This CSV file contains the dstport, protocol, and tag mappings.
+Please create these files with the correct format and pass as input to program.
 
 Output:
 The program will generate an output file that contains:
 Tag Counts: The number of occurrences for each tag.
 Port/Protocol Combination Counts: The number of occurrences for each dstport/protocol combination.
+Create a file output.txt and pass to the program.
 
 The program has been tested with the following cases:
 Basic Functionality: Parsing and matching entries with correct dstport and protocol.
