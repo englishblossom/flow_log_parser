@@ -1,5 +1,5 @@
 # flow_log_parser
-Description
+Description:
 This program parses flow log data and maps each row to a tag based on a lookup table. The flow log entries are in the default format (version 2 only), and the lookup table is provided as a CSV file containing columns: dstport, protocol, and tag.
 
 Key Features:
@@ -9,7 +9,7 @@ Untagged Handling: If a dstport and protocol combination does not exist in the l
 Invalid Lines Handling: Lines with fewer than 8 fields are skipped.
 Duplicate Entries: Duplicate entries are counted.
 
-Assumptions
+Assumptions:
 Log Format: The program supports only the default flow log format, version 2. Custom log formats or other versions are not supported.
 Lookup Table: The lookup table is a CSV file with three columns: dstport, protocol, and tag.
 Protocol Mapping: The program uses a predefined mapping of protocol numbers to protocol names (e.g., 6 -> tcp, 17 -> udp). If a protocol number is not found in the mapping, it is labeled as unknown.
